@@ -1,0 +1,52 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #333;
+}
+
+#garden-canvas {
+    border: 2px solid #333;
+    background-color: #fff;
+    cursor: crosshair;
+}
+
+#toolbar {
+    margin-bottom: 10px;
+}
+
+.tool-button {
+    padding: 8px 16px;
+    border: 1px solid #555;
+    background-color: #ddd;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.tool-button.active {
+    background-color: #bbb;
+    border-width: 2px;
+    border-color: #000;
+}
+
+#controls {
+    display: none; /* Ukryte domyślnie */
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #e9e9e9;
+    border-radius: 5px;
+}
+
+#controls.visible {
+    display: block; /* Widoczne po aktywacji narzędzia */
+}
+
+#sprinkler-range-input {
+    width: 60px;
+}

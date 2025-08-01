@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projektant Ogrodu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Projektant Ogrodu</h1>
+    <div id="toolbar">
+        <button id="draw-border-tool" class="tool-button active">Rysuj Granice</button>
+        <button id="add-tree-tool" class="tool-button">Dodaj Drzewo</button>
+        <button id="add-patio-tool" class="tool-button">Dodaj Patio</button>
+        <button id="add-sprinkler-tool" class="tool-button">Dodaj Spryskiwacz</button>
+    </div>
+    <div id="controls">
+        <label for="sprinkler-range">Zasięg spryskiwacza (promień):</label>
+        <input type="number" id="sprinkler-range-input" value="75" min="10" max="300">
+        <span>px</span>
+    </div>
+    <canvas id="garden-canvas"></canvas>
+    <script src="app.js"></script>
+</body>
+</html>
